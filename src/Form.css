@@ -1,16 +1,21 @@
 .form  {
-  text-align: left;
+  text-align: center;
   margin-left: 400px;
   margin-right: 400px;
 }
+.form input {
+  background-color: #a0dea0;
+  border-radius: 12px;
+}
 .textfield{
-  width: 200px;
-  display: block;
   width: 100%;
   overflow: hidden;
-  resize: both;
+  background-color: #a0dea0;
   min-height: 100px;
   line-height: 20px;
+  resize: vertical;
+  overflow: auto;
+  border-radius: 12px;
 }
 
 .submitBtn {
@@ -20,4 +25,7 @@
  padding: 10px 10px; /* Some padding */
  cursor: pointer; /* Pointer/hand icon */
  text-align: center;
+}
+.submitBtn:hover {
+  background-color: #3e8e41;
 }

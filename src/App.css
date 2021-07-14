@@ -20,24 +20,18 @@
 
 .container button {
 text-decoration: none;
- background-color: #173617; /* Green background */
+ background-color: #a0dea0; /* Green background */
  border: 1px solid green; /* Green border */
  color: black; /* White text */
  padding: 10px 10px; /* Some padding */
  cursor: pointer; /* Pointer/hand icon */
- margin: 0 auto
+ margin: 0 auto;
+ border-radius: 12px;
+ margin-left :5px;
 }
-
+.container button:hover {
+  background-color: #3e8e41;
+}
 .container a {
  color: black;
-}
-
-.navigation button {
- background-color: #173617; /* Green background */
- border: 1px solid green; /* Green border */
- color: black; /* White text */
- padding: 10px 5px; /* Some padding */
- cursor: pointer; /* Pointer/hand icon */
- text-align: center;
- margin: 0 auto;
 }

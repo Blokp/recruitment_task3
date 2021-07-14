@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom'
+import Form from './Form';
 import './Home.css';
+import {
+  Link
+} from 'react-router-dom';
 class Home extends Component {
   constructor() {
     super();
     this.divisions= ['XYZ Warszawa, Poland', 'ABC Kraków, Poland', 'RNQ Berlin, Germany'];
     this.state = {
-      selectedDivision: ""
+      selectedDivision: "",
+      style: {visibility: 'hidden'}
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -14,7 +19,8 @@ class Home extends Component {
   render() {
     var handleToUpdate = this.props.handleToUpdate;
 return (
-      <div class="btn-group">
+      <div>
+      <div className="btn-group">
       <h1>Company Divisions</h1>
       <label>
         Select company division
@@ -26,16 +32,20 @@ return (
           {this.state.selectedDivision}
         </label>
       </div>
+      <div  style={this.state.style}>
+      <button>
+        <Link to="/form"   style={{textDecoration: 'none'}}>Next</Link >
+      </button>
+      </div>
+      </div>
     );
     }
 
 
     handleClick=(e)=>{
-           console.log("this is working fine");
            e.preventDefault();
            this.setState({selectedDivision : "Selected: "+e.target.value})
-           //handleToUpdate({style: {visibility: "visible"}})
-           console.log(e.target);
+           this.setState({style : {visibility: 'visible'}})
        }
 }
 export default Home;

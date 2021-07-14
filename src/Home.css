@@ -8,7 +8,7 @@
 }
 
  .btn-group button {
-  background-color: #173617; /* Green background */
+  background-color: #a0dea0; /* Green background */
   border: 1px solid green; /* Green border */
   color: black; /* White text */
   padding: 10px 24px; /* Some padding */
@@ -16,7 +16,8 @@
   width: 25%; /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
   text-align: center;
-  margin: 0 auto
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 
@@ -27,8 +28,4 @@
 /* Add a background color on hover */
 .btn-group button:hover {
   background-color: #3e8e41;
-}
-
-.selected {
-    border: 2px solid rgb(0, 0, 255);
 }
