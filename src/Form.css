@@ -1,0 +1,23 @@
+.form  {
+  text-align: left;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.textfield{
+  width: 200px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 100px;
+  line-height: 20px;
+}
+
+.submitBtn {
+ background-color: #173617; /* Green background */
+ border: 1px solid green; /* Green border */
+ color: black; /* White text */
+ padding: 10px 10px; /* Some padding */
+ cursor: pointer; /* Pointer/hand icon */
+ text-align: center;
+}

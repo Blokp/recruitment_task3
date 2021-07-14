@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.a
+{
+  text-decoration: none;
+}
+.container {
+  background-color: #61C961;
+  color: #213321;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.container button {
+text-decoration: none;
+ background-color: #173617; /* Green background */
+ border: 1px solid green; /* Green border */
+ color: black; /* White text */
+ padding: 10px 10px; /* Some padding */
+ cursor: pointer; /* Pointer/hand icon */
+ margin: 0 auto
+}
+
+.container a {
+ color: black;
+}
+
+.navigation button {
+ background-color: #173617; /* Green background */
+ border: 1px solid green; /* Green border */
+ color: black; /* White text */
+ padding: 10px 5px; /* Some padding */
+ cursor: pointer; /* Pointer/hand icon */
+ text-align: center;
+ margin: 0 auto;
+}
