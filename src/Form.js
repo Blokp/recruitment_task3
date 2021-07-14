@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './Form.css';
-import { useHistory } from 'react-router-dom';
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -56,12 +55,9 @@ class Form extends React.Component {
         break;
       default:
         break;
-        this.setState({errors, [name]: value});
-    }
 
-    this.setState({errors, [name]: value}, ()=> {
-        console.log(errors)
-    })
+    }
+        this.setState({errors, [name]: value});
   }
 
 
@@ -80,7 +76,6 @@ class Form extends React.Component {
 
   render() {
     const {errors} = this.state;
-    const {textAreaContent} = this.state;
     return (
       <div className="form" >
       <div className="success" style={this.state.styleSuccess}>
